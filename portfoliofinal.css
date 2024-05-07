@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+header{
+    height:250px;
+    width:100%;
+    background-color: rgb(1, 28, 63);
+    color: white;
+    text-align: center;
+    padding:20px 0;
+}
+header h1{
+    font-size:xx-large;
+}
+header p{
+    padding-top: 40px;
+    font-size:large;
+}
+.main {
+    display: grid;
+    grid-template-columns: 20% 1fr; 
+    grid-gap: 20px; 
+    padding: 20px;
+}
+.left{
+    background-color: white;
+}
+.options {
+    list-style-type: none; 
+}
+.options li{
+    margin-bottom: 10px;
+}
+.options li a {
+    color:rgb(1, 28, 63); 
+    text-decoration: none;
+}
+
+.options li a:hover {
+    color: rgb(102, 5, 41);
+}
+.right{
+    background-image: url('assets/bg4.jpg');
+    background-size: cover; 
+    background-position: center;
+}
+.aboutdes{
+    padding-left: 16px;
+    padding-right: 16px;
+    color:white;
+
+}
+.edutable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.education{
+    border-collapse: separate;
+    border-spacing: 20px;
+    color: white;
+}
+.projectdetails{
+    
+    display: grid;
+    grid-template-rows: auto auto; 
+    gap: 20px; 
+    padding: 40px;
+    }
+    .project{
+        padding: 20px;
+        background-color:linear-gradient(to bottom, rgb(112, 181, 230), #24a4ee70);  
+        border-radius: 10px;
+        color:white;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }  
+    .project:hover {
+        transform: scale(1.05); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+    }
