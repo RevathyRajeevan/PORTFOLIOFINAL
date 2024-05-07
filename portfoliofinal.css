@@ -10,6 +10,9 @@ header{
     color: white;
     text-align: center;
     padding:20px 0;
+    background-image: url('assets/bg4.jpg');
+    background-size: cover; 
+    background-position: center;
 }
 header h1{
     font-size:xx-large;
@@ -23,6 +26,8 @@ header p{
     grid-template-columns: 20% 1fr; 
     grid-gap: 20px; 
     padding: 20px;
+    padding-top: 0;
+    padding-right: 0;
 }
 .left{
     background-color: white;
@@ -81,4 +86,90 @@ header p{
     .project:hover {
         transform: scale(1.05); 
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+    }
+    .experience{
+        display: grid;
+        grid-template-columns: auto auto; 
+        gap: 20px; 
+        padding: 20px;
+    }
+    .experience div{
+        padding:20px;
+        background-color: rgb(6, 55, 97); 
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        color:white;
+    }
+    .skills {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        background-color: rgb(6, 55, 97,0.461);
+        width:80%;
+        margin-left: 60px;
+        padding:20px;
+        margin-bottom: 20px;
+        
+    }
+    
+    .skill-column {
+        flex: 0 0 45%; /* Adjust as needed */
+    }
+    
+    .skill {
+        margin-bottom: 15px;
+    }
+    
+    .skill-bar1 {
+        height: 20px;
+        background: linear-gradient(to right, rgb(25, 25, 101) 85%, rgb(75, 1, 55) 85% );
+        width: 100%;
+        border-radius: 5px;
+    }
+    .skill-bar2 {
+        height: 20px;
+        background: linear-gradient(to right, rgb(25, 25, 101) 82%, rgb(75, 1, 55) 82% );
+        width: 100%;
+        border-radius: 5px;
+    }
+    .skill-bar3 {
+        height: 20px;
+        background: linear-gradient(to right, rgb(25, 25, 101) 70%, rgb(75, 1, 55) 70% );
+        width: 100%;
+        border-radius: 5px;
+    }
+    .skill-bar4 {
+        height: 20px;
+        background: linear-gradient(to right, rgb(25, 25, 101) 81%, rgb(75, 1, 55) 81% );
+        width: 100%;
+        border-radius: 5px;
+    }
+    .skill-bar5 {
+        height: 20px;
+        background: linear-gradient(to right, rgb(25, 25, 101) 80%, rgb(75, 1, 55) 80% );
+        width: 100%;
+        border-radius: 5px;
+    }
+    .skill-bar6 {
+        height: 20px;
+        background: linear-gradient(to right, rgb(25, 25, 101) 80%, rgb(75, 1, 55) 80% );
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    span {
+        display: block;
+        margin-top: 5px;
+    }
+    footer{
+        background-color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .socialmedia img{
+        display: inline-block;
+        margin: 0 10px;
+        width: 40px;
+        height:auto;
+        margin-left: 20px;
     }
