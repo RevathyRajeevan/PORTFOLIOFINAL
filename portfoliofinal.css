@@ -1,42 +1,55 @@
+*{
+    scroll-behavior:smooth ;
+}
 body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 header{
-    height:250px;
+    height:580px;
     width:100%;
     background-color: rgb(1, 28, 63);
     color: white;
     text-align: center;
     padding:20px 0;
-    background-image: url('assets/bg4.jpg');
+    background-image: url('assets/bg7.jpg');
     background-size: cover; 
     background-position: center;
 }
 header h1{
-    font-size:xx-large;
+    font-size:70px;
+    letter-spacing: 3px;
+}
+header h3{
+    font-size:50px;
+    letter-spacing: 3px;
 }
 header p{
-    padding-top: 40px;
-    font-size:large;
+    padding-top: 90px;
+    font-size:40px;
+    letter-spacing: 3px;
 }
 .main {
     display: grid;
-    grid-template-columns: 20% 1fr; 
+    grid-template-columns: 15% 1fr; 
     grid-gap: 20px; 
     padding: 20px;
     padding-top: 0;
     padding-right: 0;
+   
 }
 .left{
     background-color: white;
+    position:sticky;
+    top:450px;
 }
 .options {
     list-style-type: none; 
 }
 .options li{
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
 }
 .options li a {
     color:rgb(1, 28, 63); 
@@ -46,22 +59,33 @@ header p{
 .options li a:hover {
     color: rgb(102, 5, 41);
 }
+.options li:hover {
+    transform: translateX(5px); }
+
 .right{
-    background-image: url('assets/bg4.jpg');
+    background-image: url('assets/bg7.jpg');
     background-size: cover; 
     background-position: center;
 }
 .aboutdes{
-    padding-left: 16px;
+    padding-left: 25px;
     padding-right: 16px;
     color:white;
-
+    margin-bottom: 20px;
+    font-size: larger;
+    margin-top: 50px;
+}
+.aboutdes:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 .edutable{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px;
+    font-size: larger;
+    margin-top: 50px;
 }
 .education{
     border-collapse: separate;
@@ -74,6 +98,9 @@ header p{
     grid-template-rows: auto auto; 
     gap: 20px; 
     padding: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: larger;
     }
     .project{
         padding: 20px;
@@ -92,6 +119,8 @@ header p{
         grid-template-columns: auto auto; 
         gap: 20px; 
         padding: 20px;
+        margin-bottom: 20px;
+        font-size: larger;
     }
     .experience div{
         padding:20px;
@@ -99,6 +128,10 @@ header p{
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         color:white;
+    }
+    .experience div:hover{
+        transform: scale(1.05); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     }
     .skills {
         display: flex;
@@ -108,8 +141,13 @@ header p{
         width:80%;
         margin-left: 60px;
         padding:20px;
-        margin-bottom: 20px;
-        
+        margin-bottom: 80px;   
+        margin-top: 80px;
+        font-size: larger;
+    }
+    .skills:hover{
+        transform: scale(1.05); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     }
     
     .skill-column {
@@ -118,41 +156,42 @@ header p{
     
     .skill {
         margin-bottom: 15px;
+        color:white
     }
     
-    .skill-bar1 {
+     .skill-bar1 {
         height: 20px;
-        background: linear-gradient(to right, rgb(25, 25, 101) 85%, rgb(75, 1, 55) 85% );
+        background: linear-gradient(to right, rgb(245, 245, 249) 85%, rgb(75, 1, 55) 85% );
         width: 100%;
         border-radius: 5px;
     }
-    .skill-bar2 {
+     .skill-bar2 {
         height: 20px;
-        background: linear-gradient(to right, rgb(25, 25, 101) 82%, rgb(75, 1, 55) 82% );
+        background: linear-gradient(to right, rgb(245, 245, 249) 82%, rgb(75, 1, 55) 82% );
         width: 100%;
         border-radius: 5px;
     }
-    .skill-bar3 {
+     .skill-bar3 {
         height: 20px;
-        background: linear-gradient(to right, rgb(25, 25, 101) 70%, rgb(75, 1, 55) 70% );
+        background: linear-gradient(to right, rgb(245, 245, 249) 70%, rgb(75, 1, 55) 70% );
         width: 100%;
         border-radius: 5px;
     }
-    .skill-bar4 {
+     .skill-bar4 {
         height: 20px;
-        background: linear-gradient(to right, rgb(25, 25, 101) 81%, rgb(75, 1, 55) 81% );
+        background: linear-gradient(to right, rgb(245, 245, 249) 81%, rgb(75, 1, 55) 81% );
         width: 100%;
         border-radius: 5px;
     }
-    .skill-bar5 {
+     .skill-bar5 {
         height: 20px;
-        background: linear-gradient(to right, rgb(25, 25, 101) 80%, rgb(75, 1, 55) 80% );
+        background: linear-gradient(to right, rgb(245, 245, 249) 80%, rgb(75, 1, 55) 80% );
         width: 100%;
         border-radius: 5px;
     }
     .skill-bar6 {
         height: 20px;
-        background: linear-gradient(to right, rgb(25, 25, 101) 80%, rgb(75, 1, 55) 80% );
+        background: linear-gradient(to right, rgb(245, 245, 249) 80%, rgb(75, 1, 55) 80% );
         width: 100%;
         border-radius: 5px;
     }
@@ -165,11 +204,17 @@ header p{
         background-color: white;
         text-align: center;
         padding: 20px 0;
+        margin-bottom: 20px;
     }
     .socialmedia img{
         display: inline-block;
         margin: 0 10px;
         width: 40px;
         height:auto;
-        margin-left: 20px;
+        margin-left: 50px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .socialmedia img:hover {
+        transform: scale(1.2); 
+        filter: brightness(150%);
     }
