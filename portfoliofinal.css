@@ -7,7 +7,7 @@ body {
     height: 100%;
 }
 header{
-    height:580px;
+    height:600px;
     width:100%;
     background-color: rgb(1, 28, 63);
     color: white;
@@ -20,6 +20,12 @@ header{
 header h1{
     font-size:70px;
     letter-spacing: 3px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+header h1:hover{
+    transform: scale(1.2); 
+    box-shadow: 0 8px 16px rgba(179, 173, 173, 0.4); 
 }
 header h3{
     font-size:50px;
@@ -60,7 +66,13 @@ header p{
     color: rgb(102, 5, 41);
 }
 .options li:hover {
-    transform: translateX(5px); }
+    transform: translateX(20px); }
+.img1 img{
+    width: 140px;
+    height:140px;
+    margin-top: 400px;
+    margin-bottom: 300px;
+}
 
 .right{
     background-image: url('assets/bg7.jpg');
@@ -74,6 +86,8 @@ header p{
     margin-bottom: 20px;
     font-size: larger;
     margin-top: 50px;
+    width:650px;
+    padding-left:100px;
 }
 .aboutdes:hover{
     transform: scale(1.05); 
@@ -86,13 +100,15 @@ header p{
     padding: 40px;
     font-size: larger;
     margin-top: 50px;
+    height: 500px;
 }
 .education{
     border-collapse: separate;
-    border-spacing: 20px;
+    border-spacing: 40px;
     color: white;
+    border: 2px solid white;
 }
-.projectdetails{
+/* .projectdetails{
     
     display: grid;
     grid-template-rows: auto auto; 
@@ -103,7 +119,7 @@ header p{
     font-size: larger;
     }
     .project{
-        padding: 20px;
+        padding: 40px;
         background-color:linear-gradient(to bottom, rgb(112, 181, 230), #24a4ee70);  
         border-radius: 10px;
         color:white;
@@ -113,14 +129,37 @@ header p{
     .project:hover {
         transform: scale(1.05); 
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+        
     }
-    .experience{
+    .proj{
+        margin-top: 200px;
+        color:rgb(1, 28, 63); 
+        font-size: 50px;
+    }
+    .proj img{
+        height:120px;
+        width:120px;
+    } */
+    /* .exp img{
+        height:200px;
+        width:200px;
+        margin-top: 300px;
+    } */
+    /* .sk img{
+        height:200 px;
+        width:200px;
+        margin-top: 300px;
+     } */
+    /* .experience{
         display: grid;
         grid-template-columns: auto auto; 
         gap: 20px; 
         padding: 20px;
         margin-bottom: 20px;
         font-size: larger;
+        height:400px;
+        padding-top: 60px;
+        
     }
     .experience div{
         padding:20px;
@@ -128,10 +167,19 @@ header p{
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         color:white;
+        height:200px;
     }
     .experience div:hover{
         transform: scale(1.05); 
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }  */
+    /* .section{
+        height:500px;
+        color:white;
+    }
+    .section p{
+        text-align: center;
+        font-size: 30px;
     }
     .skills {
         display: flex;
@@ -151,7 +199,7 @@ header p{
     }
     
     .skill-column {
-        flex: 0 0 45%; /* Adjust as needed */
+        flex: 0 0 45%; 
     }
     
     .skill {
@@ -199,7 +247,7 @@ header p{
     span {
         display: block;
         margin-top: 5px;
-    }
+    } */
     footer{
         background-color: white;
         text-align: center;
@@ -213,8 +261,20 @@ header p{
         height:auto;
         margin-left: 50px;
         transition: transform 0.3s ease, filter 0.3s ease;
+        margin-bottom: 20px;
     }
     .socialmedia img:hover {
         transform: scale(1.2); 
         filter: brightness(150%);
     }
+    .mail{
+        height: 30px;
+        width:30px;
+        margin-right: 10px;
+    }
+    .phone{
+        height: 30px;
+        width:30px; 
+        margin-right: 10px;
+    }
+    
