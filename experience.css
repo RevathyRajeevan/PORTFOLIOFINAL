@@ -1,0 +1,29 @@
+
+.experience{
+    display: grid;
+    grid-template-columns: auto auto; 
+    gap: 20px; 
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: larger;
+    height:400px;
+    padding-top: 60px;
+    
+}
+.experience div{
+    padding:20px;
+    background-color: rgb(6, 55, 97); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color:white;
+    height:200px;
+}
+.experience div:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.exp img{
+    height:200px;
+    width:200px;
+    margin-top: 300px;
+}

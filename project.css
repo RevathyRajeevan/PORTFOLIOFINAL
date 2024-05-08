@@ -1,0 +1,32 @@
+.projectdetails{
+    
+    display: grid;
+    grid-template-rows: auto auto; 
+    gap: 20px; 
+    padding: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: larger;
+    }
+    .project{
+        padding: 40px;
+        background-color:linear-gradient(to bottom, rgb(112, 181, 230), #24a4ee70);  
+        border-radius: 10px;
+        color:white;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }  
+    .project:hover {
+        transform: scale(1.05); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+        
+    }
+    .proj{
+        margin-top: 200px;
+        color:rgb(1, 28, 63); 
+        font-size: 50px;
+    }
+    .proj img{
+        height:120px;
+        width:120px;
+    }
